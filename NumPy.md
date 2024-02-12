@@ -103,7 +103,7 @@ Here are some snippets of code demonstrating NumPy functionalities:
         print(random_numbers)
 
 ## 4. When was it created?
-NumPy was created in 2005. [https://numpy.org/about/#:~:text=NumPy%20is%20an%20open%20source,the%20Numeric%20and%20Numarray%20libraries.]
+[NumPy was created in 2005.] (https://numpy.org/about/#:~:text=NumPy%20is%20an%20open%20source,the%20Numeric%20and%20Numarray%20libraries. "NumPy - About Us)
 
 ## 5. Why did you select this package/library?
 I selected NumPy because it is a powerful library that facilitates efficient numerical computations in Python. It offers extensive functionality for array manipulation, linear algebra, statistical analysis, and random number generation. NumPy's performance benefits and ease of use make it indispensable for data analysis and scientific computing tasks.
