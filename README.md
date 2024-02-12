@@ -17,12 +17,14 @@ The program serves the purpose of demonstrating basic statistical analysis using
 
 ## 4. What would be some sample input/output?
 Sample input:
+
     ```
     Enter the number of samples: 1000
     Enter the number of features: 5
     ```
 
 Sample output:
+
     ```
     Basic Statistics:
     ------------------
