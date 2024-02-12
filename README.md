@@ -18,14 +18,11 @@ The program serves the purpose of demonstrating basic statistical analysis using
 ## 4. What would be some sample input/output?
 Sample input:
 
-    ```
     Enter the number of samples: 1000
     Enter the number of features: 5
-    ```
 
 Sample output:
 
-    ```
     Basic Statistics:
     ------------------
     Means:
@@ -61,4 +58,3 @@ Sample output:
     [ 0.06122982 -0.00500292  1.          0.00290382 -0.01491819]
     [ 0.01842021  0.01834569  0.00290382  1.          0.0532791 ]
     [-0.02799814  0.0354643  -0.01491819  0.0532791   1.        ]]
-    ```
