@@ -4,12 +4,12 @@
 I selected the NumPy library.
 
 ## 2. What is the package/library?
-NumPy is a fundamental package for scientific computing with Python. It provides support for arrays, matrices, and mathematical functions. NumPy's main object is the homogeneous multidimensional array. It is used for numerical computations and data manipulation.
+[NumPy, short for Numerical Python, is a fundamental package for scientific computing in Python][1][2]. [It provides a high-performance multidimensional array object, and tools for working with these arrays][3].
 
 ### Purpose:
-- NumPy serves the purpose of providing efficient computation and manipulation of numerical data in Python.
-- It is widely used in scientific computing, data analysis, machine learning, and various other domains.
-- NumPy's array operations are significantly faster than traditional Python lists, making it suitable for handling large datasets.
+- NumPy provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation, and much more.
+- NumPy arrays facilitate advanced mathematical and other types of operations on large numbers of data. Typically, such operations are executed more efficiently and with less code than is possible using Python’s built-in sequences.
+- NumPy aims to provide an array object that is up to 50x faster than traditional Python lists. This is because NumPy arrays are stored at one continuous place in memory unlike lists, so processes can access and manipulate them very efficiently.
 
 ### How do you use it?
 To use NumPy, you first need to import the library:
@@ -121,3 +121,7 @@ I would recommend NumPy to anyone involved in scientific computing, data analysi
 ### Would you continue using this package/library? Why or why not?
 
 Absolutely, I would continue using NumPy. It has become an essential part of my Python toolkit for data analysis and numerical computing tasks. Its performance benefits and extensive functionality make it indispensable in my projects.
+
+[1]: https://numpy.org/doc/stable/user/whatisnumpy.html
+[2]: https://www.w3schools.com/python/numpy/numpy_intro.asp
+[3]: https://www.geeksforgeeks.org/python-numpy/
