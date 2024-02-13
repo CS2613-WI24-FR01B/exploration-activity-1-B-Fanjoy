@@ -4,7 +4,7 @@
 I selected the NumPy library.
 
 ## 2. What is the package/library?
-[NumPy, short for Numerical Python, is a fundamental package for scientific computing in Python][1][2]. [It provides a high-performance multidimensional array object, and tools for working with these arrays][3].
+[NumPy, short for Numerical Python, is a fundamental package for scientific computing in Python] [1] [2]. [It provides a high-performance multidimensional array object, and tools for working with these arrays] [3].
 
 ### Purpose:
 - NumPy provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation, and much more.
