@@ -8,7 +8,9 @@ NumPy, short for Numerical Python, is a fundamental package for scientific compu
 
 ### Purpose:
 - NumPy provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation, and much more [[1]].
+
 - NumPy arrays facilitate advanced mathematical and other types of operations on large numbers of data. Typically, such operations are executed more efficiently and with less code than is possible using Python’s built-in sequences [[1]].
+
 - NumPy aims to provide an array object that is up to 50x faster than traditional Python lists [[2]]. This is because NumPy arrays are stored at one continuous place in memory unlike lists, so processes can access and manipulate them very efficiently [[2]].
 
 ### How do you use it?
@@ -22,7 +24,52 @@ Once NumPy is installed, import it in your applications by adding the import key
     
 Shortening the imported name to np is better for the readability of code using NumPy.
 
-After importing, you can create NumPy arrays, perform operations on them, and use various NumPy functions.
+#### Creating Arrays: 
+NumPy’s main object is the homogeneous multidimensional array. It is a table of elements (usually numbers), all of the same type, indexed by a tuple of non-negative integers. You can create a NumPy array using the numpy.array() function [[14]] [[15]].
+
+#### Array Operations: 
+You can perform element-wise operations on arrays like addition, subtraction, multiplication, and division [[16]].
+
+#### Indexing and Slicing: 
+NumPy arrays can be indexed and sliced, similar to Python lists [[17]] [[18]].
+
+#### Array Manipulation: 
+NumPy provides several routines for manipulation of elements in ndarray object [[7]]. They can be classified into the following types [[7]]:
+
+- Changing Shape: reshape, flat, flatten, ravel
+- Transpose Operations: transpose, ndarray.T, rollaxis, swapaxes
+- Changing Dimensions: broadcast, broadcast_to, expand_dims, squeeze
+- Joining Arrays: concatenate, stack, hstack, vstack
+- Splitting Arrays: split, hsplit, vsplit
+- Adding / Removing Elements: resize, append, insert, delete, unique
+
+#### Linear Algebra: 
+NumPy provides us with functions for performing common linear algebra tasks, such as array multiplication, solving linear systems, and more [[8]] [[9]]. Here are some of the linear algebra functions provided by NumPy [[8]]:
+
+- dot(): calculates product of two arrays
+- inner(): calculates inner product of arrays
+- outer(): calculates outer product of arrays
+- det(): calculates determinant of a matrix
+- solve(): solves linear matrix equation
+- inv(): calculates the multiplicative inverse of the matrix
+- trace(): calculates the sum of diagonal elements
+
+#### Statistical Functions: 
+NumPy provides various statistical functions for finding minimum, maximum, percentile standard deviation and variance, etc. from the given elements in the array [[10]] [[11]]. Here are some of the statistical functions provided by NumPy [[10]]:
+
+- median(): return the median of an array
+- mean(): return the mean of an array
+- std(): return the standard deviation of an array
+- percentile(): return the nth percentile of elements in an array
+- min(): return the minimum element of an array
+- max(): return the maximum element of an array
+
+#### Random Number Generation: 
+NumPy offers the random module to work with random numbers [[12]] [[13]]. Here are some of the functions provided by NumPy’s random module [[13]]:
+
+- randint(): returns a random integer from a specified range
+- rand(): returns a random float between 0 and 1
+- choice(): generates a random sample from a given 1-D array
 
 ## 3. What are the functionalities of the package/library?
 Here are some snippets of code demonstrating NumPy functionalities:
@@ -31,40 +78,66 @@ Here are some snippets of code demonstrating NumPy functionalities:
 
     # Creating arrays
 
-        arr = np.array([1, 2, 3, 4, 5])
-        print(arr)
+        a = np.array([1, 2, 3])  # Creates a 1-dimensional array
+        b = np.array([(1, 2, 3), (4, 5, 6)])  # Creates a 2-dimensional array
 
     # Array operations
 
-        arr1 = np.array([1, 2, 3])
-        arr2 = np.array([4, 5, 6])
-        print(arr1 + arr2)
+        a = np.array([1, 2, 3])
+        b = np.array([4, 5, 6])
+
+        print(a + b)  # Output: array([5, 7, 9])
+        print(a - b)  # Output: array([-3, -3, -3])
+        print(a * b)  # Output: array([ 4, 10, 18])
+        print(a / b)  # Output: array([0.25, 0.4 , 0.5 ])
 
     # Indexing and slicing
 
-        print(arr[2])
-        print(arr[1:4])
+        a = np.array([1, 2, 3, 4, 5])
+
+        print(a[0])  # Output: 1
+        print(a[1:3])  # Output: array([2, 3])
 
     # Array manipulation
 
-        arr_reshaped = arr.reshape(5, 1)
-        print(arr_reshaped)
+        # Create a 1D array
+        a = np.array([1, 2, 3, 4, 5, 6])
+
+        # Reshape the array to a 2D array with 2 rows and 3 columns
+        b = a.reshape(2, 3)
+
+        # Transpose the 2D array
+        c = b.T
 
     # Linear algebra
 
-        matrix = np.array([[1, 2], [3, 4]])
-        print(np.dot(matrix, matrix))
+        # Coefficients of the equations
+        A = np.array([[1, 2], [3, 4]])
+
+        # Constants on the RHS of the equations
+        b = np.array([5, 6])
+
+        # Solve the system of equations
+        x = np.linalg.solve(A, b)
 
     # Statistical functions
 
-        data = np.random.normal(loc=0, scale=1, size=100)
-        print(np.mean(data))
-        print(np.std(data))
+        # Create a NumPy array
+        a = np.array([1, 2, 3, 4, 5])
+
+        # Calculate the mean
+        mean = np.mean(a)
+
+        # Calculate the standard deviation
+        std_dev = np.std(a)
 
     # Random number generation
 
-        random_numbers = np.random.randint(1, 10, size=(3, 3))
-        print(random_numbers)
+        # Generate a random integer from 0 to 100
+        x = np.random.randint(100)
+
+        # Generate a random float from 0 to 1
+        y = np.random.rand()
 
 ## 4. When was it created?
 NumPy was created in [2005](https://numpy.org/about/#:~:text=NumPy%20is%20an%20open%20source,the%20Numeric%20and%20Numarray%20libraries.).
@@ -91,3 +164,16 @@ Absolutely, I would continue using NumPy. It has become an essential part of my 
 [3]: https://www.geeksforgeeks.org/python-numpy/
 [4]: https://www.w3schools.com/python/numpy/numpy_getting_started.asp
 [5]: https://numpy.org/doc/stable/user/absolute_beginners.html
+[6]: https://www.devopsschool.com/blog/what-is-numpy-and-how-it-works-an-overview-and-its-use-cases-2/#Use_case_of_Numpy
+[7]: https://www.tutorialspoint.com/numpy/numpy_array_manipulation.htm
+[8]: https://www.programiz.com/python-programming/numpy/linear-algebra
+[9]: https://www.geeksforgeeks.org/numpy-linear-algebra/
+[10]: https://www.programiz.com/python-programming/numpy/statistical-functions
+[11]: https://www.tutorialspoint.com/numpy/numpy_statistical_functions.htm
+[12]: https://realpython.com/numpy-random-number-generator/
+[13]: https://www.w3schools.com/python/numpy/numpy_random.asp
+[14]: https://numpy.org/doc/stable/user/basics.creation.html
+[15]: https://www.w3schools.com/python/numpy/numpy_creating_arrays.asp
+[16]: https://www.programiz.com/python-programming/numpy/basic-array-operations
+[17]: https://datagy.io/numpy-array-indexing-slicing/
+[18]: https://numpy.org/doc/stable/user/basics.indexing.html
