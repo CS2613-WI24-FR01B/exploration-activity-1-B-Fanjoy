@@ -143,10 +143,10 @@ Here are some snippets of code demonstrating NumPy functionalities:
 NumPy was created in [2005](https://numpy.org/about/#:~:text=NumPy%20is%20an%20open%20source,the%20Numeric%20and%20Numarray%20libraries.).
 
 ## 5. Why did you select this package/library?
-I selected NumPy because it is a powerful library that facilitates efficient numerical computations in Python. It offers extensive functionality for array manipulation, linear algebra, statistical analysis, and random number generation. NumPy's performance benefits and ease of use make it indispensable for data analysis and scientific computing tasks.
+I selected NumPy because it is a powerful library that provides efficient numerical computations in Python. It offers extensive functionality for array manipulation, linear algebra, statistical analysis, and random number generation. All of which are invaluable tools for a Computer Science student. Especially considering the complex algebraic calculations needed for Linear Algebra and Game Development courses.
 
 ## 6. How did learning the package/library influence your learning of the language?
-Learning NumPy significantly enhanced my understanding of Python, particularly in terms of numerical computing and data manipulation. It introduced me to new concepts such as array broadcasting, vectorized operations, and efficient indexing techniques. Understanding NumPy has made me more proficient in Python programming overall.
+Learning NumPy significantly enhanced my understanding of Python, particularly in terms of efficient data handling and operations. It introduced me to the concept of arrays and the power of vectorized operations, which are more efficient than traditional loops in Python. Additionally, NumPy’s functions and methods provided exposure to a wide range of mathematical and statistical operations which are essential in the field of data science, a field which I am looking into as a career. This helped me understand how Python is a powerful tool for both general-purpose programming and specialized scientific computing tasks.
 
 ## 7. How was your overall experience with the package/library?
 My overall experience with NumPy has been excellent. It has simplified many complex numerical computations and data manipulation tasks. I would highly recommend NumPy to anyone working with numerical data in Python.
@@ -157,7 +157,7 @@ I would recommend NumPy to anyone involved in scientific computing, data analysi
 
 ### Would you continue using this package/library? Why or why not?
 
-Absolutely, I would continue using NumPy. It has become an essential part of my Python toolkit for data analysis and numerical computing tasks. Its performance benefits and extensive functionality make it indispensable in my projects.
+Absolutely, I would continue using NumPy. It has become an essential part of my Python toolkit for data analysis and numerical computing tasks. I can see it becoming part of my daily usage if I persue data science as a career.
 
 [1]: https://numpy.org/doc/stable/user/whatisnumpy.html
 [2]: https://www.w3schools.com/python/numpy/numpy_intro.asp
