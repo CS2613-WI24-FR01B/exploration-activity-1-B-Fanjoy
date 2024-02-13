@@ -14,7 +14,7 @@ NumPy, short for Numerical Python, is a fundamental package for scientific compu
 - NumPy aims to provide an array object that is up to 50x faster than traditional Python lists [[2]]. This is because NumPy arrays are stored at one continuous place in memory unlike lists, so processes can access and manipulate them very efficiently [[2]].
 
 ### How do you use it?
-To use NumPy, you first need to install it. If you have Python and PIP already installed on a system, then installation of NumPy is very easy. You can install it using this command  [[4]]: 
+  To use NumPy, you first need to install it. If you have Python and PIP already installed on a system, then installation of NumPy is very easy. You can install it using this command  [[4]]: 
 
     pip install numpy
 
