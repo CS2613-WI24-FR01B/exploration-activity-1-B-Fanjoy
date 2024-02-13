@@ -7,58 +7,22 @@ I selected the NumPy library.
 NumPy, short for Numerical Python, is a fundamental package for scientific computing in Python [[1]] [[2]]. It provides a high-performance multidimensional array object, and tools for working with these arrays [[3]].
 
 ### Purpose:
-- NumPy provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation, and much more.
-- NumPy arrays facilitate advanced mathematical and other types of operations on large numbers of data. Typically, such operations are executed more efficiently and with less code than is possible using Python’s built-in sequences.
-- NumPy aims to provide an array object that is up to 50x faster than traditional Python lists. This is because NumPy arrays are stored at one continuous place in memory unlike lists, so processes can access and manipulate them very efficiently.
+- NumPy provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation, and much more [[1]].
+- NumPy arrays facilitate advanced mathematical and other types of operations on large numbers of data. Typically, such operations are executed more efficiently and with less code than is possible using Python’s built-in sequences [[1]].
+- NumPy aims to provide an array object that is up to 50x faster than traditional Python lists [[2]]. This is because NumPy arrays are stored at one continuous place in memory unlike lists, so processes can access and manipulate them very efficiently [[2]].
 
 ### How do you use it?
-To use NumPy, you first need to import the library:
+To use NumPy, you first need to install it. If you have Python and PIP already installed on a system, then installation of NumPy is very easy. You can install it using this command: 
 
-    import numpy as np
+    pip install numpy [[4]].
 
-Then, you can create NumPy arrays:
+Once NumPy is installed, import it in your applications by adding the import keyword: 
 
-    arr = np.array([1, 2, 3, 4, 5])
+    import numpy as np [[4]] [[5]]. 
+    
+Shortening the imported name to np is better for the readability of code using NumPy.
 
-You can also create arrays of zeros, ones, or with specific ranges using functions like:
-
-    zeros_array = np.zeros((3, 3))  # creates a 3x3 array filled with zeros
-    ones_array = np.ones((2, 4))    # creates a 2x4 array filled with ones
-    range_array = np.arange(1, 10)  # creates an array with values from 1 to 9
-    linspace_array = np.linspace(0, 10, num=5)  # creates an array with 5 equally spaced values from 0 to 10
-    random_array = np.random.random((2, 2))  # creates a 2x2 array with random values between 0 and 1
-    random_normal_array = np.random.randn(3, 3)  # creates a 3x3 array with random values from a normal distribution
-    random_int_array = np.random.randint(1, 100, size=(3, 3))  # creates a 3x3 array with random integers between 1 and 100
-
-You can perform various operations on arrays, such as element-wise arithmetic operations (addition, subtraction, multiplication, division), broadcasting, and vectorized operations:
-
-    arr1 = np.array([1, 2, 3])
-    arr2 = np.array([4, 5, 6])
-
-    # Element-wise arithmetic operations
-
-        addition = arr1 + arr2
-        subtraction = arr1 - arr2
-        multiplication = arr1 * arr2
-        division = arr1 / arr2
-
-    # Broadcasting and vectorized operations
-
-        scalar_multiply = arr1 * 2
-        squared = arr1 ** 2
-
-You can also perform indexing and slicing operations on arrays to access elements or subsets of arrays:
-
-    arr = np.array([1, 2, 3, 4, 5])
-
-    # Accessing elements
-
-        print(arr[0])   # prints the first element (index 0)
-        print(arr[-1])  # prints the last element (index -1)
-
-    # Slicing
-
-        print(arr[1:4])  # prints elements from index 1 to 3 (exclusive)
+After importing, you can create NumPy arrays, perform operations on them, and use various NumPy functions.
 
 ## 3. What are the functionalities of the package/library?
 Here are some snippets of code demonstrating NumPy functionalities:
@@ -125,3 +89,5 @@ Absolutely, I would continue using NumPy. It has become an essential part of my 
 [1]: https://numpy.org/doc/stable/user/whatisnumpy.html
 [2]: https://www.w3schools.com/python/numpy/numpy_intro.asp
 [3]: https://www.geeksforgeeks.org/python-numpy/
+[4]: https://www.w3schools.com/python/numpy/numpy_getting_started.asp
+[5]: https://numpy.org/doc/stable/user/absolute_beginners.html
